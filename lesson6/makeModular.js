@@ -7,7 +7,7 @@ module(directory, extension, function(error, files) {
   if (error) {
     console.log(error);
   }
-  for (i = 0; i < files.length; i++) {
-    console.log(files[i]);
-  }
+  files.forEach(function(file){
+    console.log(file);
+  });
 });
